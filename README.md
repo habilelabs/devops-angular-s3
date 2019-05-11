@@ -2,7 +2,9 @@
  Angular Website Deployment to S3 using CloudFormation
 
 # Overview
-This repo is a demonstration of Continuous Delivery of a angular website to S3 via CodeBuild and CodePipeline. To launch, you'll need to specify a unique S3 bucket name for the website bucket that will be created.
+This repo is a demonstration of Continuous Delivery of a angular website to S3 via CodeBuild and CodePipeline. To launch, you'll need to specify a unique S3 bucket name for the website bucket that will be created. At the conclusion, you will be able to provision all of the AWS resources by clicking a "Launch Stack" button and going through the AWS CloudFormation steps to launch a solution stack.
+In this example, all the source files are hosted in GitHub and can be made available to developers. All of the steps in the process are orchestrated via CodePipeline and the build and deployment actions are performed by CodeBuild. The provisioning of all of the AWS resources is defined in a CloudFormation template.
+By automating the actions and stages into a deployment pipeline, you can release changes to users in production whenever you choose to do so without needing to repeatedly manually upload files to S3. Instead, you just commit the changes to the GitHub repository and the pipeline orchestrates the rest. While this is a simple example, you can follow the same model and tools for much larger and sophisticated applications.
 
 # Launch Stack
 
